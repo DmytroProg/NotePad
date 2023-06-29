@@ -1,0 +1,21 @@
+﻿<Window x:Class="Notepad.AboutWondow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad"
+        mc:Ignorable="d"
+        Title="Про програму Блокнот" Height="450" Width="450"
+        ResizeMode="NoResize">
+    <StackPanel Background="LightGray">
+        <Image Source="/Images/windows.png" Margin="70, 20"></Image>
+        <Polyline Points="20,0 430,0" Stroke="Gray"></Polyline>
+        <TextBlock Margin="20" TextWrapping="WrapWithOverflow"
+                   FontSize="14">
+            Блокнот - одна з найпростіших програм по роботі з текстом. У ній ми можемо тільки вводити текст і редагувати його. Змінювати шрифт або розмір окремих символів, тобто виробляти форматування тексту, в цій програмі ми не можемо. Але, тим не менш, ця програма може бути корисна, так як вона дуже проста, документи, створені в ній, займають дуже мало місця, до того ж Блокнот встановлений на всіх комп'ютерах з Windows і тому документи, створені в цій програмі можна відкрити на будь-якому комп'ютері.
+        </TextBlock>
+
+        <Button x:Name="closeBtn" Margin="380, 80, 10, 10"
+                Click="closeBtn_Click">OK</Button>
+    </StackPanel>
+</Window>
